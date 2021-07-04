@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <title>Abhishek's Portfolio</title>
+</head>
+
+<body>
+
+    <div id="button-to-up">
+        <a href="#">
+            <i class="fas fa-arrow-circle-up color-crimson"></i>
+        </a>
+    </div>
+    
+    <!-- navigation bar -->
+    <div class="navbar" id="nav">
+        <div style="font-weight: bold;font-size: 40px;"><a href="#">Portfo<span style="color: crimson;" id="lio">lio.</span></a></div>
+        <ul class="menu">
+            <li class="menu-items"><a href="#home">Home</a></li>
+            <li class="menu-items"><a href="#profile">Profile</a></li>
+            <li class="menu-items"><a href="#skills">Skills</a></li>
+            <li class="menu-items"><a href="#projects">Projects</a></li>
+            <li class="menu-items"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home -->
+    <div class="home" id="home">
+        <div style="display: flex; margin-top:40px;">
+            
+                <img src="static/images/mine.png" height="400" width="300" style="border-radius: 5px;">
+                <div class="about-me">
+                    <p>I'm Abhishek Kumar and I'm a <span id="typing"></span></p>
+                    <br>
+                    I'm pursuing my bachelor's from <font color="crimson"><b>Rungta College of Engineering and Technology, Bhilai</b></font>. I am a self motivated and ambitious guy, open to new challenging experiences and learning new skills. I am a very passionate learner who loves programming and development and is always hungry to digest new skills with good communication and problem solving skills.
+                    <br>
+                    <button type="submit" onclick="window.open('static/pdfs/Resume.pdf')" class="resume-button">
+                        <span><i class="fas fa-download"></i>&nbsp;&nbsp;Resume</span></button>
+                </div>
+        </div>
+    </div>
+
+    <div class="Education" id="profile">
+        <p class="title">Profile and Education</p>
+        <div style="display: flex; margin-top:40px;">
+            
+            <div style="width: 48%;height:30vw;background-color:blue; margin-right:2%;">
+                Profile
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div style="width: 48%; background-color:#c0c0c0; margin-left:2%;">
+                Education
+                <i class="fas fa-university"></i>
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <p class="title">Skills & Certificates</p>
+        <div style="display: flex; margin-top:40px;">
+            
+            <div style="width: 48%;height:30vw;background-color:blue; margin-right:2%;">
+                    skills
+            </div>
+            <div style="width: 48%; background-color:#c0c0c0; margin-left:2%;">
+                    Certificates
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <p class="title">Projects</p> 
+        Topic wise
+        >> Django
+        >> ML/DL/AI
+        >> Basic
+    </div>
+
+    <div class="contact" id="contact">
+        <p class="title">Contacts Me</p> 
+        <!-- footer daalenge -->
+
+        <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm" style="margin-top: 50px;">
+            Name:<br>
+            <input type="text" size="19" name="ContactName"><br><br>
+            Message:<br> 
+            <textarea name="ContactCommentt" rows="6" cols="20"></textarea>
+            <br><br> <input type="submit" value="submit"> 
+        </form>
+
+    </div>
+
+    <!-- footer completed -->
+    <div class="footer">
+        <div style="display: flex;text-align:center; justify-content: space-between;">
+            <div style="width:200px; padding:5px;">
+                <i class="fas fa-map-marker-alt font-size-40 padding-5"></i>
+                <br>
+                    <font color="crimson"><b>WHERE TO FIND ME</b></font>
+                <br>
+                <br>
+                Jindal VIhar phase-2<br>
+                Raigarh, Chhattishgarh,<br>
+                496001
+            </div>
+            <div style="width:200px; padding:5px;">
+                <i class="far fa-envelope font-size-40 padding-5"></i>
+                <br>
+                    <font color="crimson"><b>EMAIL ME AT</b></font>
+                <br>
+                <br>
+                4bhis1@gmail.com
+            </div>
+            <div style="width:200px; padding:5px;">
+                <i class="fas fa-phone-alt font-size-40 padding-5"></i>
+                <br>
+                    <font color="crimson"><b>CALL ME AT</b></font>
+                <br>
+                <br>
+                +91 7805969406
+            </div>
+        </div>
+        <div class="font-size-40 float-right">
+            <a href="https://github.com/4bhis1" target="_blank"><i class="fab fa-github padding-5"></i></a>
+            <a href="https://www.instagram.com/4bhis1/" target="_blank"><i class="fab fa-instagram padding-5"></i> </a>
+            <a href="https://www.linkedin.com/in/absk/" target="_blank"><i class="fab fa-linkedin-in padding-5"></i></a>
+        </div>
+
+    </div>
+        
+    
+
+</body>
+<script src="static/js/script.js"></script>
+<script src="static/js/fontawesome.js"></script>
+</html>
