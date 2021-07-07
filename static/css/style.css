@@ -109,7 +109,7 @@ p{
 }
 
 .Education{
-    padding: 7% 5% 10% 5%;
+    padding: 7% 5% 5% 5%;
     background-color: white;
     color: black;
     text-align: center;
@@ -125,7 +125,7 @@ p{
     background-color: white;
     color: black;
     text-align: center;
-    padding: 7% 5% 10% 5%;
+    padding: 0% 12% 10% 12%;
 }
 
 .contact{
@@ -173,7 +173,7 @@ p{
 
 .progress, .progress-fluid{
     /* height: 10px; */
-    background-color: #fff;
+    background-color: #c0c0c0;
     border-radius: 10px;
     height: auto;
     /* margin-left: 30px; */
@@ -188,6 +188,8 @@ p{
 .progress{
     margin-top: 4px;
     margin-left: 8px;
+    font-size: 12px;
+    text-align: center;
 }
 
 input, textarea{
@@ -203,14 +205,26 @@ input, textarea{
      padding-left:10px;
 }
 
+input{
+    border-left: 2px;
+    border-left-color: crimson;
+    border-left-style: solid;
+}
+
 textarea{
     height: 80px;
     border-right: 2px;
     border-right-color: crimson;
     border-right-style: solid;
+    resize: none;
+    overflow-x: auto;
 }
 
 .submit{
+
+    border: 2px;
+    border-style: solid;
+    border-color: crimson;
     cursor: pointer;
     font-size: 20px;
     height: 40px;
@@ -220,6 +234,124 @@ textarea{
 
 .submit:hover{
     background-color: crimson;
-    
+}
 
+.education-detail{
+    width: 48%; 
+    /* background-color:#c0c0c0;  */
+    margin-left:2%;
+    border: solid 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.tabpan{
+    background-color: #e4dcdc;
+    height: auto;
+    width: inherit;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: left;
+  }
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards{
+    width:250px;
+    height: auto;
+    background-color: beige;
+    padding: 0px 5px 5px 5px;
+    position: relative;
+    float: left;
+    perspective:100px;
+    margin: 20px;
+}
+
+.cards:hover{
+    -webkit-filter: brightness(70%)
+}
+
+.cards:hover .github{
+    visibility: visible;
+}
+
+.github{
+    position: fixed;
+    display: flex;
+    top: 50%; 
+    left: 50%;
+    z-index: 999;
+    background-color: blueviolet ;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+    visibility: hidden;
+    transform: translate(-50%,-50%);
+}
+
+.tech{
+    background-color: crimson;
+    color: white;
+    padding: 0px 5px 0px 5px;
+    width: fit-content;
+    border-radius: 3px;
+    margin:2px;
+}
+
+.technology{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brief{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
 }

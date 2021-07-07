@@ -22,11 +22,10 @@
     
     <!-- navigation bar -->
     <div class="snavbar" id="nav">
-        <div style="font-weight: bold;font-size: 40px;"><a href="#">Portfo<span style="color: crimson;" id="lio">lio.</span></a></div>
+        <div style="font-weight: bold;font-size: 40px;"><a href="https://4bhis1.github.io/portfolio/">Portfo<span style="color: crimson;" id="lio">lio.</span></a></div>
         <ul class="smenu">
             <li class="smenu-items"><a href="#home">Home</a></li>
             <li class="smenu-items"><a href="#profile">Profile</a></li>
-            <li class="smenu-items"><a href="#skills">Skills</a></li>
             <li class="smenu-items"><a href="#projects">Projects</a></li>
             <li class="smenu-items"><a href="#contact">Contact</a></li>
         </ul>
@@ -44,6 +43,7 @@
                     <br>
                     <button type="submit" onclick="window.open('static/pdfs/Resume.pdf')" class="resume-button">
                         <span><i class="fas fa-download"></i>&nbsp;&nbsp;Resume</span></button>
+                    <a href="#contact" class="resume-button" style="margin-left: 40px;padding-left:40px;padding-right:40px">Hire Me</a>
                 </div>
         </div>
     </div>
@@ -105,7 +105,7 @@
             </div>
 
 
-            <div style="width: 48%; background-color:#c0c0c0; margin-left:2%;">
+            <div class="education-detail">
                 <div style="display: flex;">
                     <i class="fas fa-graduation-cap"></i>
                     <div>
@@ -120,22 +120,322 @@
                     <i class="fas fa-briefcase"></i>
                 </div>        
             </div>
-        </div>
-    </div>
 
-    <div class="skills" id="skills">
-        <p class="title">Skills </p>
-        
+        </div>
     </div>
 
     <div class="projects" id="projects">
         <p class="title">Projects</p> 
-        Topic wise
-        >> Django
-        >> ML/DL/AI
-        >> Basic
+
+
+        <div class="tabpan">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'All')">All</button>
+                <button class="tablinks" onclick="openCity(event, 'Django')">Django</button>
+                <button class="tablinks" onclick="openCity(event, 'Machine Learning')">Machine Learning</button>
+                <button class="tablinks" onclick="openCity(event, 'Basic')">Basic</button>
+            </div>
+
+            <!-- all -->
+            <div id="All" class="tabcontent" style="display: block;">
+                <h1>All</h1>
+                <div class="contain">
+
+                    <!-- blog -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Blog" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Blog</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Django</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div>
+                        </div>
+                        <div class="brief">
+                            Its simple blog website where indivisual can create it own account and can post their blogs, which can be seen every indivisual visiting the site.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- secret keeper -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Blog" target="_blank" class="github" >
+                            Github
+                        </a>
+                        <h2>Secret Keeper (work on progress) </h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Django</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div><div class="tech">JavaScript</div><div class="tech">Git</div>
+                        </div>
+                        <div class="brief">
+                            Its simple blog website where indivisual can create it own account and can post their blogs, which can be seen every indivisual visiting the site.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- Movie-Recommendation-Engine -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Movie-Recommendation-Engine" target="_blank" class="github" style="top: 40%; left: 50%;">
+                            Github
+                        </a>
+                        <a href="https://absk-movie.herokuapp.com/" target="_blank" class="github" style="top: 60%; left: 50%;">
+                            Live
+                        </a>
+                        <h2>Movie Recommendation Engine</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Flsk</div><div class="tech">HTML</div><div class="tech">JavaScript</div><div class="tech">CSS</div><div class="tech">Clustering Algorithm</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            Its a simple application where you can search your favourite movie and the recommendation engine will suggest you all movie which you might like. It also shows popular movies as well as cast and basic information about the movie.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- swp covid 19 -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/swpcovid19" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>SWP Covid 19</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Php</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div><div class="tech">JavaScript</div><div class="tech">MySQL</div>
+                        </div>
+                        <div class="brief">
+                            The lack of transparency in this pandemic situation is being considered a boon by the fraudsters and black marketers. The people are out to help but are unable to reach the needy. To Develop an e-enabled designed to make a direct connection between the needy and the helping hand contributors.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+
+                    <!-- web portal for KBFMS -->
+                    <div class="cards">
+                        <a href="https://github.com/Rocking260/PK414_Thetechway" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Web Portal for KBFMS</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Python</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div><div class="tech">Laravel</div><div class="tech">MySQL</div>
+                            <div class="tech">CLustering Algorithm</div>
+                        </div>
+                        <div class="brief">
+                            It is a web portal developed on the behalf of the problem statement given by govt. of Bihar in SIH2020.<br>
+                            It is a portal to manage everything related to farmer, and state government. (TEAM SIZE -6).
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- equation Plotter -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Equation-Plotter" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Equation Plotter</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Java</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            This a Java based program which plots the trignometric equation and have features like
+                            <ul>
+                                <li>Plot the graph with animation</li>
+                                <li>Colour Picker</li>
+                                <li>Finding Zeros</li>
+                                <li>Diffrentiating the given equation</li>
+                            </ul>
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- kite:self made assistant -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/A-self-made-assistant-in-Python" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Kite: Self made assistant</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Python</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            It can search your questions on wikipedia just by saying wikipedida search It can tell you the different stream news as per you want It can play music It can tell you date and time
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- djnago projects -->
+            <div id="Django" class="tabcontent">
+                <h1>Django</h1>
+                <div class="contain">
+
+                    <!-- blog -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Blog" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Blog</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Django</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div>
+                        </div>
+                        <div class="brief">
+                            Its simple blog website where indivisual can create it own account and can post their blogs, which can be seen every indivisual visiting the site.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- secret keeper -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Blog" target="_blank" class="github" >
+                            Github
+                        </a>
+                        <h2>Secret Keeper (work on progress) </h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Django</div><div class="tech">HTML</div><div class="tech">Bootstrap</div><div class="tech">CSS</div><div class="tech">JavaScript</div><div class="tech">Git</div>
+                        </div>
+                        <div class="brief">
+                            Its simple blog website where indivisual can create it own account and can post their blogs, which can be seen every indivisual visiting the site.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+
+                    <!-- Movie-Recommendation-Engine -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Movie-Recommendation-Engine" target="_blank" class="github" style="top: 40%; left: 50%;">
+                            Github
+                        </a>
+                        <a href="https://absk-movie.herokuapp.com/" target="_blank" class="github" style="top: 60%; left: 50%;">
+                            Live
+                        </a>
+                        <h2>Movie Recommendation Engine</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Flsk</div><div class="tech">HTML</div><div class="tech">JavaScript</div><div class="tech">CSS</div><div class="tech">Clustering Algorithm</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            Its a simple application where you can search your favourite movie and the recommendation engine will suggest you all movie which you might like. It also shows popular movies as well as cast and basic information about the movie.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
+            
+            <!-- machine learning  -->
+            <div id="Machine Learning" class="tabcontent">
+                <h1>All</h1>
+                <div class="contain">
+
+                    <!-- Movie-Recommendation-Engine -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Movie-Recommendation-Engine" target="_blank" class="github" style="top: 40%; left: 50%;">
+                            Github
+                        </a>
+                        <a href="https://absk-movie.herokuapp.com/" target="_blank" class="github" style="top: 60%; left: 50%;">
+                            Live
+                        </a>
+                        <h2>Movie Recommendation Engine</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Flsk</div><div class="tech">HTML</div><div class="tech">JavaScript</div><div class="tech">CSS</div><div class="tech">Clustering Algorithm</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            Its a simple application where you can search your favourite movie and the recommendation engine will suggest you all movie which you might like. It also shows popular movies as well as cast and basic information about the movie.
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- basic -->
+            <div id="Basic" class="tabcontent">
+                <h1>Basic</h1>
+                <div class="contain">
+
+                    <!-- equation Plotter -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/Equation-Plotter" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Equation Plotter</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Java</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            This a Java based program which plots the trignometric equation and have features like
+                            <ul>
+                                <li>Plot the graph with animation</li>
+                                <li>Colour Picker</li>
+                                <li>Finding Zeros</li>
+                                <li>Diffrentiating the given equation</li>
+                            </ul>
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- kite:self made assistant -->
+                    <div class="cards">
+                        <a href="https://github.com/4bhis1/A-self-made-assistant-in-Python" target="_blank" class="github">
+                            Github
+                        </a>
+                        <h2>Kite: Self made assistant</h2>
+                        <hr>
+                        <div class="technology">
+                            <div class="tech">Python</div><div class="tech">GIT</div>
+                        </div>
+                        <div class="brief">
+                            It can search your questions on wikipedia just by saying wikipedida search It can tell you the different stream news as per you want It can play music It can tell you date and time
+                        </div>
+                        
+                        <hr>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
     </div>
 
+    <!-- contact -->
     <div class="contact" id="contact">
         <p class="title">Contact Me</p> 
         <!-- footer daalenge -->
@@ -151,8 +451,6 @@
         </form>
         
     </div>
-
-    
 
     <!-- footer completed -->
     <div class="footer">
