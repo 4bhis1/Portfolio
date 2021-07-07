@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/fontawesome.css">
     <title>Abhishek's Portfolio</title>
@@ -18,14 +21,14 @@
     </div>
     
     <!-- navigation bar -->
-    <div class="navbar" id="nav">
+    <div class="snavbar" id="nav">
         <div style="font-weight: bold;font-size: 40px;"><a href="#">Portfo<span style="color: crimson;" id="lio">lio.</span></a></div>
-        <ul class="menu">
-            <li class="menu-items"><a href="#home">Home</a></li>
-            <li class="menu-items"><a href="#profile">Profile</a></li>
-            <li class="menu-items"><a href="#skills">Skills</a></li>
-            <li class="menu-items"><a href="#projects">Projects</a></li>
-            <li class="menu-items"><a href="#contact">Contact</a></li>
+        <ul class="smenu">
+            <li class="smenu-items"><a href="#home">Home</a></li>
+            <li class="smenu-items"><a href="#profile">Profile</a></li>
+            <li class="smenu-items"><a href="#skills">Skills</a></li>
+            <li class="smenu-items"><a href="#projects">Projects</a></li>
+            <li class="smenu-items"><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -46,32 +49,83 @@
     </div>
 
     <div class="Education" id="profile">
-        <p class="title">Profile and Education</p>
-        <div style="display: flex; margin-top:40px;">
+        <p class="title">Profile</p>
+        <div style="display: flex; margin-top:20px;">
             
-            <div style="width: 48%;height:30vw;background-color:blue; margin-right:2%;">
-                Profile
-                <i class="fas fa-briefcase"></i>
+            <div style="width: 48%; margin-right:2%; display:flex;text-align:left; font-size:20px">
+                
+                <div style="width: 48%;margin-right:2%;text-align:left;font-weight:bold;">
+               
+                    HTML / CSS / Bootstrap
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 85%; color:white">85%</div>
+                    </div>
+                    <br>
+    
+                    JavaScript
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 45%; color:white">45%</div>
+                    </div>
+                    <br>
+    
+                    Djnago
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 75%; color:white">75%</div>
+                    </div>
+                    <br>
+    
+                    GIT
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 85%; color:white">85%</div>
+                    </div>
+                    <br>
+                </div>
+
+                <div style="width: 48%; margin-left:2%;text-align:left; font-weight:bold;">
+                    C++
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 85%; color:white">85%</div>
+                    </div>
+                    <br>
+    
+                    MySQL
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 90%; color:white">90%</div>
+                    </div>
+                    <br>
+    
+                    Machine Learning
+                    <div class="progress">
+                        <div class="progress-fluid" style="width: 75%; color:white">75%</div>
+                    </div>
+                    <br>
+                </div>
+
+
             </div>
+
+
             <div style="width: 48%; background-color:#c0c0c0; margin-left:2%;">
-                Education
-                <i class="fas fa-university"></i>
-                <i class="fas fa-graduation-cap"></i>
+                <div style="display: flex;">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h2>B.E in Computer Science</h2>
+                        Rungta College of Engineering and Technology
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-university"></i>
+                </div>
+                <div>
+                    <i class="fas fa-briefcase"></i>
+                </div>        
             </div>
         </div>
     </div>
 
     <div class="skills" id="skills">
-        <p class="title">Skills & Certificates</p>
-        <div style="display: flex; margin-top:40px;">
-            
-            <div style="width: 48%;height:30vw;background-color:blue; margin-right:2%;">
-                    skills
-            </div>
-            <div style="width: 48%; background-color:#c0c0c0; margin-left:2%;">
-                    Certificates
-            </div>
-        </div>
+        <p class="title">Skills </p>
+        
     </div>
 
     <div class="projects" id="projects">
@@ -83,21 +137,26 @@
     </div>
 
     <div class="contact" id="contact">
-        <p class="title">Contacts Me</p> 
+        <p class="title">Contact Me</p> 
         <!-- footer daalenge -->
 
-        <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm" style="margin-top: 50px;">
+        <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm" style="margin: 50px 180px 0 180px;text-align:left; padding-left:10px;font-size:20px;">
             Name:<br>
-            <input type="text" size="19" name="ContactName"><br><br>
+            <input type="text" size="19" name="ContactName" ><br><br>
+            Email:<br>
+            <input type="text" size="19" name="Email" ><br><br>
             Message:<br> 
             <textarea name="ContactCommentt" rows="6" cols="20"></textarea>
-            <br><br> <input type="submit" value="submit"> 
+            <br><br> <input type="submit" value="Submit" class="submit"> 
         </form>
-
+        
     </div>
+
+    
 
     <!-- footer completed -->
     <div class="footer">
+        <hr>
         <div style="display: flex;text-align:center; justify-content: space-between;">
             <div style="width:200px; padding:5px;">
                 <i class="fas fa-map-marker-alt font-size-40 padding-5"></i>
