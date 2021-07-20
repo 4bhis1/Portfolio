@@ -1,23 +1,11 @@
-Projects me left-border dena h 
-form me  required krenge
 
-scroll bar ka thoda kuch krna h
-cards k hover effext me 
-heading se all hta dunga
-
-niche se mere h where to find me
-		Email me at
-		Call me at
+Education dalna h
 
 text-align ko left change krte h
 
-contact me active section krna h
 
 project section me aur list and scroll wali fuctionality daalni h
 
-photography k websote ka link dena h
-
-Animation dalna h and resposive bnana h
 
 
 

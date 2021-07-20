@@ -14,23 +14,24 @@ a:active, a:hover, a:link, a:visited{
 
 .snavbar{
     position:fixed;
-    width: 100vw;
+    width: 100%;
     display:flex;
     align-items: center;
     font-size: 1.5rem;
     z-index: 99999;
     transition: all 0.3s ease;
-    padding: 5px 10% 5px 5%;
+    /* padding: 5px 10% 5px 10%; */
+    justify-content: space-between;
 }
 
 .smenu{
     list-style-type: none;
-    margin-left: 50%;
-    padding: 0;
+    /* margin-left: 50%; */
+    padding-right: 7%;
 }
 
 .smenu-items{
-    padding: 4px;
+    /* padding: 4px; */
     display: inline;
 }
 
@@ -205,6 +206,10 @@ input, textarea{
      padding-left:10px;
 }
 
+input:active, input:focus{
+    border: 2px solid crimson;
+}
+
 input{
     border-left: 2px;
     border-left-color: crimson;
@@ -256,6 +261,7 @@ textarea{
     background-color: #e4dcdc;
     height: auto;
     width: inherit;
+    /* text-align: left; */
 }
 
 
@@ -299,7 +305,8 @@ textarea{
 .contain{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    align-items: flex-start;
 }
 
 .cards{
@@ -313,27 +320,19 @@ textarea{
     margin: 20px;
 }
 
-.cards:hover{
-    -webkit-filter: brightness(70%)
-}
-
-.cards:hover .github{
-    visibility: visible;
-}
-
 .github{
     position: fixed;
     display: flex;
-    top: 50%; 
-    left: 50%;
+    bottom: 5%; 
+    right: 5%;
     z-index: 999;
     background-color: blueviolet ;
     font-size: 18px;
     border-radius: 4px;
     padding: 2px 5px 2px 5px;
     cursor: pointer;
-    visibility: hidden;
-    transform: translate(-50%,-50%);
+    /* visibility: hidden; */
+    /* transform: translate(-50%,-50%); */
 }
 
 .tech{
