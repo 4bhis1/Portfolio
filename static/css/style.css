@@ -206,8 +206,9 @@ input, textarea{
      padding-left:10px;
 }
 
-input:active, input:focus{
+input:active, input:focus, textarea:focus{
     border: 2px solid crimson;
+    outline-width: 0px;
 }
 
 input{
