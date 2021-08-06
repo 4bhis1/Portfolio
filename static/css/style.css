@@ -1,9 +1,24 @@
-body{
-    margin: 0;
-    padding: 0;
-    display: grid;
+.navbar{
+    background-color: transparent;
     color: white;
-    overflow-y: auto;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+body{
+    overflow-x: hidden;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navigation-items{
+    padding-left: 20px;
 }
 
 a:active, a:hover, a:link, a:visited{
@@ -12,51 +27,47 @@ a:active, a:hover, a:link, a:visited{
     color:currentColor;
 }
 
-.snavbar{
-    position:fixed;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    font-size: 1.5rem;
-    z-index: 99999;
-    transition: all 0.3s ease;
-    /* padding: 5px 10% 5px 10%; */
-    justify-content: space-between;
-}
-
-.smenu{
-    list-style-type: none;
-    /* margin-left: 50%; */
-    padding-right: 7%;
-}
-
-.smenu-items{
-    /* padding: 4px; */
-    display: inline;
-}
-
-a:active, a:hover, a:link, a:visited{
-    text-decoration: none;
-    color: white;
-}
-
 .home{
+    position: relative;
+    /* padding-top: 100px; */
+    /* height: 100vh; */
     background-color: black;
-    font-size: 40px;
-    text-align: center;
+    padding: 10% 6%;
+    color: white;
+    font-size: 20px;
     font-weight: bold;
-    padding: 7% 10% 10% 10%;
     font-family: 'Ubuntu', sans-serif;
 }
 
-p{
-    font-size: 30px;
-    margin: 0;
+#button-to-up{
+    position:fixed;
+    z-index: 9999;
+    bottom: 2%;
+    right: 2%;
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+    color: crimson;
 }
 
-
-#typing{
+#button-to-up:active, #button-to-up:link, #button-to-up:visited, .color-crimson{
     color: crimson;
+}
+
+.col{
+    background-color: azure;
+}
+
+.line{
+    border-color: crimson;
+    border-style: dotted;
+    border-top: 0;
+    border-width:2px;
+    width:80%;
+    padding:0%;
+    margin-top:0px;
+    margin-bottom:0;
+    border-width: 10px;
 }
 
 .resume-button{
@@ -77,99 +88,54 @@ p{
     cursor: pointer;
 }
 
-.title{
+p{
+    font-size: 30px;
+    margin: 0;
+}
+
+.profile{
+    background-color: azure;
+    color: black;
+    padding: 5% 6%;
+}
+
+.main-heading{
     font-size: 40px; 
     margin-block-end:0px;
     position:relative;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     font-weight: bold;
+    text-align: center;
 }
 
-.title::after{
+.main-heading::after{
     position: absolute;
     bottom: -8px;
     left: 50%;
     font-size: 20px;
     color: crimson;
     padding: 0 5px;
-    background: #fff;
+    /* background: #fff; */
     transform: translateX(-50%);
     background-position-y: 20px;
 }
 
-.about>.title::after{
+.about>.main-heading::after{
     content: "I'd Love To Hear From You.";
 }
 
-.about-me{
-    text-align: justify;
-    padding: 30px 0px 0px 100px;
-    font-size:25px;
-    justify-items: center;
-    font-weight: 100;
+.button-division{
+    display: block;
 }
 
-.Education{
-    padding: 7% 5% 5% 5%;
-    background-color: white;
-    color: black;
-    text-align: center;
+.skill-box{
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
-.skills{
-    background-color: black;
-    text-align: center;
-    padding: 7% 5% 10% 5%;
-}
-
-.projects{
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 0% 12% 10% 12%;
-}
-
-.contact{
-    background-color: black;
-    padding: 2% 10% 4% 10%;
-    text-align: center;
-}
-.contact>.title::after{
-    content: "Get in touch";
-    background-color: transparent;
-}
-
-.footer{
-    background-color: black;
-    padding: 2% 15% 2% 15%;
-    text-align: center;
-}
-
-#button-to-up{
-    position:fixed;
-    z-index: 9999;
-    bottom: 2%;
-    right: 2%;
-    font-size: 50px;
-    cursor: pointer;
-    display: none;
-    color: crimson;
-}
-
-#button-to-up:active, #button-to-up:link, #button-to-up:visited, .color-crimson{
-    color: crimson;
-}
-
-.font-size-40{
-    font-size: 40px;
-}
-
-.float-right{
-    float: right;
-}
-
-.padding-5{
-    padding: 15px;
+.skill-heading{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .progress, .progress-fluid{
@@ -189,7 +155,30 @@ p{
 .progress{
     margin-top: 4px;
     margin-left: 8px;
-    font-size: 12px;
+    height: 20px;
+    text-align: center;
+}
+
+.footer{
+    background-color: black;
+    padding: 2% 6%;
+    text-align: center;
+    /* width: auto; */
+}
+
+.ico{
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.social{
+    display: block;
+    text-align: right;
+}
+
+.contact{
+    background-color: black;
+    padding: 2% 30%;
     text-align: center;
 }
 
@@ -200,10 +189,10 @@ input, textarea{
     border-bottom: 2px;
     border-bottom-color: crimson ;
     border-bottom-style: solid;
-    width: 90%;
+    width: 100%;
     height:30px;
-     margin-left:10px;
-     padding-left:10px;
+    padding:10px;
+    margin: 10px;
 }
 
 input:active, input:focus, textarea:focus{
@@ -218,7 +207,7 @@ input{
 }
 
 textarea{
-    height: 80px;
+    height: 40%;
     border-right: 2px;
     border-right-color: crimson;
     border-right-style: solid;
@@ -234,124 +223,33 @@ textarea{
     cursor: pointer;
     font-size: 20px;
     height: 40px;
-    width: 100%;
-    margin-left: 0;
+    padding-bottom: 40px;
+    /* width: 100%; */
+    /* margin-left: 0; */
 }
 
 .submit:hover{
     background-color: crimson;
+    /* bor */
 }
 
-.education-detail{
-    width: 48%; 
-    /* background-color:#c0c0c0;  */
-    margin-left:2%;
-    border: solid 0px;
+.project{
+    padding: 0 20% 5% 20%;
+    background-color: azure;
+    color: black;
 }
 
+@media screen and (max-width: 600px) {
 
-
-
-
-
-
-
-
-
-.tabpan{
-    background-color: #e4dcdc;
-    height: auto;
-    width: inherit;
-    /* text-align: left; */
+    .contact{
+        padding: 5% 0%;
+    }
+    
+    .project{
+        padding: 10%;
+    }
 }
 
 
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    text-align: left;
-  }
 
-.contain{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: flex-start;
-}
 
-.cards{
-    width:250px;
-    height: auto;
-    background-color: beige;
-    padding: 0px 5px 5px 5px;
-    position: relative;
-    float: left;
-    perspective:100px;
-    margin: 20px;
-}
-
-.github{
-    position: fixed;
-    display: flex;
-    bottom: 5%; 
-    right: 5%;
-    z-index: 999;
-    background-color: blueviolet ;
-    font-size: 18px;
-    border-radius: 4px;
-    padding: 2px 5px 2px 5px;
-    cursor: pointer;
-    /* visibility: hidden; */
-    /* transform: translate(-50%,-50%); */
-}
-
-.tech{
-    background-color: crimson;
-    color: white;
-    padding: 0px 5px 0px 5px;
-    width: fit-content;
-    border-radius: 3px;
-    margin:2px;
-}
-
-.technology{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.brief{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0px 5px 0px 5px;
-}

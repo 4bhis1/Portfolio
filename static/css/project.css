@@ -1,0 +1,97 @@
+.tabpan{
+    background-color: #e4dcdc;
+    height: auto;
+    width: inherit;
+    /* text-align: left; */
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: left;
+  }
+
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.cards{
+    width:250px;
+    height: auto;
+    background-color: beige;
+    padding: 0px 5px 5px 5px;
+    position: relative;
+    float: left;
+    perspective:100px;
+    margin: 20px;
+}
+
+.github{
+    position: fixed;
+    display: flex;
+    bottom: 5%; 
+    right: 5%;
+    z-index: 999;
+    background-color: blueviolet ;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+    cursor: pointer;
+    /* visibility: hidden; */
+    /* transform: translate(-50%,-50%); */
+}
+
+.tech{
+    background-color: crimson;
+    color: white;
+    padding: 0px 5px 0px 5px;
+    width: fit-content;
+    border-radius: 3px;
+    margin:2px;
+}
+
+.technology{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brief{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px 5px 0px 5px;
+}
