@@ -1,2 +1,2 @@
 # portfolio
-It's my portfolio website which provides my professional information.
+It's my Portfolio website which provides my professional information.
